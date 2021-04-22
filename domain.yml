@@ -1,0 +1,51 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - chitchat
+  - deny
+  - bot_challenge
+  - off_topic
+  - insult
+  - ask_age
+  - ask_capital
+
+entities:
+  - PER
+  - LOC
+  - OTH
+  - ORG
+  - MISC
+
+responses:
+  utter_greet:
+  - text: "Hallo! Wie geht es Dir?"
+
+  utter_goodbye:
+  - text: "Tschüss!"
+
+  utter_off_topic:
+  - text: "Das ist ein Thema, mit dem ich mich nicht auskenne."
+
+  utter_answer_insult:
+  - text: "So möchte ich nicht mit Dir reden!"
+  - text: "Wenn ich nicht so gut erzogen wäre, würde ich Dir passend antworten."
+
+
+  utter_chitchat/bot_challenge:
+  - text: "Ich bin ein Chatbot, programmiert an der FH Südwestfalen."
+
+  utter_chitchat/ask_name:
+  - image: "https://jupiter.fh-swf.de/icons/marvin/Marvin_Happy.jpeg"
+    text: "Hi, mein Name ist Marvin"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- utter_chitchat
+- action_answer_age
+- action_answer_capital

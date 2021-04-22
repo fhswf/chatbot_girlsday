@@ -1,0 +1,70 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hallo
+    - Hi
+    - Guten Tag
+    - Wie geht's?
+    - Hallo, ich bin Vanessa
+
+
+- intent: goodbye
+  examples: |
+    - Tschüss
+    - Auf Wiedersehen
+
+- intent: affirm
+  examples: |
+    - Ja
+    - j
+    - Sicher
+    - Passt
+    - Gerne
+
+- intent: deny
+  examples: |
+    - Nein
+    - n
+    - nicht
+    - bitte nicht
+    - nein danke
+
+- intent: ask_age
+  examples: |
+    - Wie alt ist Angela Merkel?
+    - Wann wurde Justin Biber geboren?
+
+- intent: ask_capital
+  examples: |
+    - Wie heißt die Hauptstadt von Frankreich?
+    - Was ist die Hauptstadt der USA?
+
+- intent: insult
+  examples: |
+    - Bist Du blöd?
+    - Du Arschloch
+    - Du bist ein a****
+    - Du bist doof
+
+- intent: off_topic
+  examples: |
+    - Wie heißt der Kaiser von China?
+    - Wie groß ist das Universum?
+    - Was hast Du studiert?
+    - Wieviel wiegt ein Elefant?
+    - Welche Farbe hat der Himmel?
+
+- intent: chitchat/ask_name
+  examples: |
+    - Wie heißt Du?
+    - Wie ist Dein Name?
+
+- intent: chitchat/bot_challenge
+  examples: |
+    - Bist Du ein Mensch?
+    - Bist Du ein Bot?
+    - Bist Du eine KI?
+    - Spreche ich mit einem Menschen?
+    - Wer hat Dich denn programmiert?

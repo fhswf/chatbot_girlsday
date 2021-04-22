@@ -1,0 +1,23 @@
+version: "2.0"
+
+stories:
+
+- story: Greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Ask for age
+  steps:
+  - intent: ask_age
+  - action: action_answer_age
+
+- story: Ask for capital
+  steps:
+  - intent: ask_capital
+  - action: action_answer_capital
+
+- story: Off topic
+  steps:
+  - intent: off_topic
+  - action: utter_off_topic
