@@ -8,6 +8,7 @@ intents:
   - deny
   - bot_challenge
   - off_topic
+  - skills
   - insult
   - ask_age
   - ask_capital
@@ -26,8 +27,15 @@ responses:
   utter_goodbye:
   - text: "Tschüss!"
 
+  utter_skills:
+  - text: "Bisher habe ich ein paar **Hauptstädte** und Geburtstage gelernt."
+
   utter_off_topic:
   - text: "Das ist ein Thema, mit dem ich mich nicht auskenne."
+  - text: "Das hat mir noch niemand beigebracht."
+  - text: "Bei dem Thema habe ich in der Schule nicht aufgepasst."
+  - text: "Das muss mir mein Programmierer noch mal erklären."
+  - text: "Das Thema habe ich noch nicht studiert."
 
   utter_answer_insult:
   - text: "So möchte ich nicht mit Dir reden!"

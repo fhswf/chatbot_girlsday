@@ -48,14 +48,24 @@ nlu:
     - Du bist ein a****
     - Du bist doof
 
+- intent: skills
+  examples: |
+    - Was kannst Du?
+    - Kannst Du sprechen?
+    - Was hast Du studiert?
+
+
 - intent: off_topic
   examples: |
     - Wie heißt der Kaiser von China?
     - Wie groß ist das Universum?
-    - Was hast Du studiert?
     - Wieviel wiegt ein Elefant?
     - Welche Farbe hat der Himmel?
-
+    - Was heißt Guten Tag auf chinesisch?
+    - Stell die Temperatur auf 17 Grad
+    - Bestell mir eine Pizza
+    - Hol mir ein Bier
+    
 - intent: chitchat/ask_name
   examples: |
     - Wie heißt Du?

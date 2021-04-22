@@ -21,3 +21,9 @@ stories:
   steps:
   - intent: off_topic
   - action: utter_off_topic
+  - action: utter_skills
+
+- story: Ask for skills
+  steps:
+  - intent: skills
+  - action: utter_skills

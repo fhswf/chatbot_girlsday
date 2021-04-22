@@ -18,6 +18,13 @@ class ActionAnswerAge(Action):
 
         return []
 
+
+CAPITALS = {
+    "Deutschland": "Berlin",
+    "USA": "Washington",
+    "Frankreich": "Paris"
+}
+
 class ActionAnswerCapital(Action):
     def name(self) -> Text:
         return "action_answer_capital"
@@ -29,6 +36,10 @@ class ActionAnswerCapital(Action):
         print(f"message: {tracker.latest_message}")
         for ent in tracker.latest_message['entities']:
             if ent['entity'] == 'LOC':
-                dispatcher.utter_message(text=f"Die Hauptstadt von {ent['value']} muss ich nachsehen.")
+                country = ent['value']
+                if country in CAPITALS:
+                    dispatcher.utter_message(text=f"Die Hauptstadt von {country} ist {CAPITALS[country]}.")
+                else:    
+                    dispatcher.utter_message(text=f"Die Hauptstadt von {country} muss ich nachsehen.")
 
         return []
